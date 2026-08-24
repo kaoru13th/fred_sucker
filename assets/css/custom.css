@@ -1,0 +1,45 @@
+/* 1. НАСТРОЙКА ШРИФТА И ЦВЕТА ДЛЯ ВСЕГО САЙТА */
+body {
+    /* Наш фон-паттерн остаётся на месте */
+    background-image: url('/images/pattern.png') !important;
+    background-repeat: repeat !important;
+    background-attachment: fixed !important;
+    
+    /* Меняем шрифт на топорный моноширинный */
+    font-family: monospace !important;
+}
+
+/* Настройка главного заголовка */
+h1, .title {
+    font-family: monospace !important;
+    color: #4f4940 !important; /* Цвет шрифта заголовка (чёрный) */
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+    text-align: center !important;
+}
+
+/* Настройка названий альбомов под квадратами */
+h2, .summary h2 {
+    font-family: monospace !important;
+    color: #736b5e !important; /* Цвет названий альбомов */
+    font-weight: bold !important;
+}
+
+
+/* 2. ШАПКА: ДОБАВЛЯЕМ ДВЕ СТРОЧКИ ТЕКСТА ПОД ЗАГОЛОВОК */
+h1.title::after {
+    /* Сам ваш текст (символ \A означает перенос строки) */
+    content: "ПРИВЕТ!" !important;
+    
+    /* Делаем его блоком под заголовком */
+    display: block !important;
+    white-space: pre-wrap !important; /* Чтобы работал перенос строк */
+    
+    /* Настраиваем внешний вид текста информации */
+    font-size: 15px !important;
+    font-weight: bold !important;
+    color: #4f4940 !important; /* Цвет текста строчек (можно поставить любой) */
+    line-height: 1.6 !important;
+    margin-top: 15px !important; /* Отступ от главного заголовка */
+    text-transform: none !important; /* Убираем большие буквы для этого текста */
+}

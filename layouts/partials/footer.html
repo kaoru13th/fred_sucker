@@ -1,0 +1,15 @@
+<footer>
+  {{ partialCached "social-icons.html" . }}
+  <section>
+    {{ .Site.Copyright }}
+    {{ range .Site.Menus.footer }}
+      <a {{ with .Params.rel -}}rel="{{ . }}"{{ end -}} href="{{ .URL }}">
+        {{ .Name }}
+      </a>
+    {{ end }}
+  </section>
+</footer>
+
+<div style="text-align: center; font-size: 20px; margin-top: 20px; opacity: 0.7; font-family: monospace;">
+ <a href="https://twitter.com/Mr_Blue_Cakе" target="_blank">x.com/Mr_Blue_Cakе</a> © Авторские права на все комиксы принадлежат MBC (ХХ13th), 2026. Копирование запрещено.
+</div>

@@ -1,0 +1,7 @@
+baseURL = 'https://example.org'
+languageCode = 'ru-ru'
+title = 'все комиксы'
+theme = 'gallery'
+
+[params]
+    customCSS = ["css/custom.css"]
